@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign-up.css">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/92aa46a256.js" crossorigin="anonymous"></script>
+    <title>Upstring - SignUp and Login</title>
+</head>
+<body>
+    <main>
+        <section id="brand-image">
+            <img src="default.png" alt="">
+            <div class="horizontal-line"></div>
+        </section>
+
+        <section id="sign-up-form">
+            <div class="form-wrapper">
+                <h1>Sign up for free to start listening.</h1>
+                <a href="index.html">
+                    <button><i class="fab fa-facebook-f"></i> Sign Up with Facebook</button>
+                </a>
+                
+                <div class="divider">
+                    <div></div>
+                    <p>or</p>
+                    <div></div>
+                </div>
+
+                <form id="signup-form">
+                    <label>What's your email?</label> 
+                    <input type="email" id="email" placeholder="Enter your email." required>
+
+                    <label>Confirm your email</label> 
+                    <input type="email" id="confirm-email" placeholder="Enter your email again." required>
+
+                    <label>Create a password</label> 
+                    <input type="password" id="password" placeholder="Create a password." required>
+
+                    <label>Confirm your password</label> 
+                    <input type="password" id="confirm-password" placeholder="Enter your password again." required>
+
+                    <label>What should we call you?</label> 
+                    <input type="text" id="profile-name" placeholder="Enter a Profile name." required>
+
+                    <label>What's your date of birth?</label> 
+                    <input type="date" id="dob">
+
+                    <label> What's your gender?</label>
+                    <div class="gender-container">
+                        <input type="radio" id="male" name="gender" value="male" class="gender-radio">
+                        <label for="male" class="gender">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female" class="gender-radio">
+                        <label for="female" class="gender">Female</label><br>
+                        <input type="radio" id="other" name="gender" value="other" class="gender-radio">
+                        <label for="other" class="gender">Other</label>
+                    </div>
+                    <input type="checkbox" id="share-data">Share my registration data with Spotify's content providers for marketing purposes.
+                    <br><br>
+                    <a href="login.html"> <button type ="submit" class="sign-up-btn">Sign Up</button>
+                </form>
+                
+            </div>
+            
+        </section>      
+    </main>
